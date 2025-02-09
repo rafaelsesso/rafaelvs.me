@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>It's me, Rafael VS!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/11.3.0/firebase-app-compat.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <!-- <script defer src="/__/firebase/11.3.0/firebase-auth-compat.js"></script> -->
+  <!-- <script defer src="/__/firebase/11.3.0/firebase-database-compat.js"></script> -->
+  <!-- <script defer src="/__/firebase/11.3.0/firebase-firestore-compat.js"></script> -->
+  <!-- <script defer src="/__/firebase/11.3.0/firebase-functions-compat.js"></script> -->
+  <!-- <script defer src="/__/firebase/11.3.0/firebase-messaging-compat.js"></script> -->
+  <!-- <script defer src="/__/firebase/11.3.0/firebase-storage-compat.js"></script> -->
+  <script defer src="/__/firebase/11.3.0/firebase-analytics-compat.js"></script>
+  <!-- <script defer src="/__/firebase/11.3.0/firebase-remote-config-compat.js"></script> -->
+  <!-- <script defer src="/__/firebase/11.3.0/firebase-performance-compat.js"></script> -->
+  <!-- 
+    initialize the SDK after all desired features are loaded, set useEmulator to false
+    to avoid connecting the SDK to running emulators.
+  -->
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+</head>
+
+<body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "firebase/app";
+    import { getAnalytics } from "firebase/analytics";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBQoORxMNFq4vo2LfLIaRQXWUSWDGFzzo0",
+      authDomain: "rafaelvs-me.firebaseapp.com",
+      projectId: "rafaelvs-me",
+      storageBucket: "rafaelvs-me.firebasestorage.app",
+      messagingSenderId: "778124132127",
+      appId: "1:778124132127:web:a51651e15a645e99a47a2a",
+      measurementId: "G-J5G0YVM2HV"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+  <div class="hero is-primary is-fullheight">
+    <div class="hero-body has-text-centered">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column is-5">
+            <figure class="image is-4by5">
+              <img src="resources/img/thumb.jpg" alt="" class="is-rounded">
+            </figure>
+          </div>
+          <div class="column">
+            <h1 class="title">Rafael Vasconcelos Sesso</h1>
+            <p class="subtitle">In the future, this will be my <strong>personal website</strong>!</p>
+            <p>;)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
